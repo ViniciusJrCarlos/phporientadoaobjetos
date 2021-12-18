@@ -41,6 +41,8 @@
     //fim exemplo 2
     */
 
+
+    /*
     //exemplo3 utilizando o get para o retorno diferente do original usando o metodo set na saida do resultado
 
     $pessoa1 = new Pessoas;
@@ -56,4 +58,15 @@
 
 
     // fim exemplo 3
+
+    */
+
+    //exemplo 4 usando o metodo construct
+
+    $pessoa1 = new Pessoas("Vinicius carlos", "Vinny", "37 anos");
+    echo  "O nome da primeira pessoa é: ".$pessoa1->getNome();
+    echo "<br>";
+
+    //fim exemplo 4
+
 ?>
