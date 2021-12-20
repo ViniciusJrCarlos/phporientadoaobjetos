@@ -60,13 +60,45 @@
     // fim exemplo 3
 
     */
-
+   
+    /*
     //exemplo 4 usando o metodo construct
 
     $pessoa1 = new Pessoas("Vinicius carlos", "Vinny", "37 anos");
     echo  "O nome da primeira pessoa é: ".$pessoa1->getNome();
     echo "<br>";
-
+    echo "<hr>";
     //fim exemplo 4
+    */
+    
+    /*
+    // exemplo 5 usando heranças
+
+    $brasileiro = new Brasileiro;
+    $brasileiro->setNome("Vinicius Carlos", "Vinny", "37 anos");
+
+    var_dump($brasileiro);
+
+    //fim exemplo 5
+  
+    */
+
+
+    
+     // exemplo 6 usando heranças
+
+     $brasileiro = new Brasileiro;
+     //$brasileiro->setNome("Vinicius Carlos", "Vinny", "37 anos");
+     
+     $brasileiro->setApelido("Vinicius", "Carlos");
+     
+     //var_dump($brasileiro);
+     
+     echo $brasileiro->getApelido();
+
+     //fim exemplo 6
+    
+
+    
 
 ?>
