@@ -95,10 +95,38 @@
      //var_dump($brasileiro);
      
      echo $brasileiro->getApelido();
-
+     echo "<br>";
      //fim exemplo 6
     
 
+    // exemplo 7 encapsulamento
+    // nesse exemplo retorna somente o objeto como publico, private e protected
+    // não retorna dados porque devem estar dentro do mesmo escopo, veja o exemplo 8
+
+    $objeto = new MyClass;
+     
+    echo $objeto->public;
+    echo "<br>";
+   // echo $objeto->protected;
+    echo "<br>";
+    //echo $objeto->private;
+
+    // exemplo 8 a class pai Myclass passa as caracteristicas para Myclass2 e conseguimos acessar de forma extendida
+    // as caracteristicas herdadas do objeto protegido nesse caso Myclass2 extends Myclass
     
+    $objeto2 = new MyClass2;
+    $objeto2->printHello();
+    echo "<br>";
+    //fim exemplo 8
+
+    //exemplo 9 classe abstrata
+
+    $classe1= new ClassConcreta();
+    echo "<br>";
+
+    //$classe1 = new ClassConcreta;
+    $classe1->imprimir();
+    echo $classe1->valorPrefixo('kkkkkkkkkkkkkkk'); 
+    // fim exemplo 9
 
 ?>

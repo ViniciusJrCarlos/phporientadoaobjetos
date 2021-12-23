@@ -175,6 +175,69 @@
 
 // fim exemplo 6
 
+class MyClass{
+
+    public $public = "public";
+    protected $protected = "protected";
+    private $private = "private";
+
+    function printHello(){
+
+        echo $this->public ."<br>";
+        echo $this->protected ."<br>";
+        echo $this->private ."<br>";
+    }
+}
+// exemplo 8 a class pai Myclass passa as caracteristicas para Myclass2 e conseguimos acessar de forma extendida
+    // as caracteristicas herdadas do objeto protegido nesse caso Myclass2 extends Myclass
+    
+class Myclass2 extends MyClass{
+
+    public $public = "public 2";
+    protected $protected = "protected 2 - só poderá ser acessada se for estendida da classe pai Myclass para a sua Classe que foi criada class Myclass2 extends MyClass";
+    private $private = "private2 - só poderá ser acessada 1 vez de dentro da propria classe criada";
+    function printHello(){
+
+        echo $this->public ."<br>";
+        echo $this->protected ."<br>";
+        echo $this->private ."<br>";
+    }
+
+
+}
+
+//fim exemplo 8
+
+//exemplo 9 classe abstrata
+
+abstract class ClassAbstrata{
+
+    abstract protected function getValor();
+    abstract protected function valorPrefixo($prefixo);
+
+    public function imprimir(){
+        echo $this->getValor();
+    }
+
+}
+class ClassConcreta extends ClassAbstrata{
+
+    protected function getValor(){
+
+        return " Classe Concreta ";
+
+    }
+    public function valorPrefixo($prefixo, $separador = '.'){
+
+        return $prefixo. "Classe concreta";
+
+    }
+
+
+}
+
+// fim exemplo 9
+
 
 
 ?>
