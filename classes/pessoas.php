@@ -122,7 +122,9 @@
     */
 
    //exemplo 6 usando heranças 
-     
+
+
+/* 
    class Pessoas {
 
 
@@ -137,7 +139,7 @@
     }
 
     public function getNome(){
-        return ucwords(this->nome);
+        return ucwords($this->nome);
         
     }
 
@@ -237,7 +239,65 @@ class ClassConcreta extends ClassAbstrata{
 }
 
 // fim exemplo 9
+*/
 
+class File{
 
+    protected $arquivo;
+    protected $recurso;
+
+    function __construct($arquivo)
+    {
+
+        //this aponta para o objeto arquivo
+        // metodo geralmente faz apenas uma atividade não mais que isso
+        $this->arquivo = $arquivo;
+        if(!file_exists($arquivo)){
+
+           // $a = fopen($arquivo, 'w+');
+            $this->abrir('w+');
+            $this->fechar();
+
+        }
+    }
+        protected function abrir($modo)
+        {
+
+            $this->recurso = fopen($this->arquivo, $modo);
+
+        }   
+
+       protected function fechar()
+        {
+
+            fclose($this->recurso);
+
+        }
+
+        function escrever($texto)
+        {
+
+            $this->abrir('a+');
+            fwrite($this->recurso, $texto);
+            $this->fechar();
+
+        }
+
+        function ler()
+        {
+
+            return file_get_contents($this->arquivo);
+        }
+
+    
+}
+   // function __destruct()
+  //  {
+//
+    //    $this-fechar();
+
+  //  }
+
+//}
 
 ?>
