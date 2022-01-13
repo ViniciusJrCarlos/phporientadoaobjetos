@@ -86,7 +86,7 @@
 
     
      // exemplo 6 usando heranças
-
+     /*
      $brasileiro = new Brasileiro;
      //$brasileiro->setNome("Vinicius Carlos", "Vinny", "37 anos");
      
@@ -127,6 +127,22 @@
     //$classe1 = new ClassConcreta;
     $classe1->imprimir();
     echo $classe1->valorPrefixo('kkkkkkkkkkkkkkk'); 
+    echo "<br>";
     // fim exemplo 9
+*/
+
+    // exemplo 10 trabalhando com Files 
+    $arq = new File('arquivos/log2.txt');
+    $arq->escrever("  FELIZ 2022 !!! <br>\n");
+    var_dump($arq);
+    echo $arq->ler();
+
+    echo "<hr>";
+/*
+    $arq2 = new File('arquivos/log3.txt');
+    $arq2->escrever("teste 2 escrever metodo file <br>\n");
+    var_dump($arq2);
+    echo $arq2->ler();
+*/
 
 ?>
