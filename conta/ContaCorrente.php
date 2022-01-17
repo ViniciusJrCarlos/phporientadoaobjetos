@@ -5,7 +5,7 @@
 
     include_once 'Conta.php';
      
-    class ContaCorrente extends Conta
+   class ContaCorrente extends Conta
     {
 
         protected $limite = 1000;
@@ -41,9 +41,9 @@
         }
         //sobrescrita
         public function validar()
-        {
-
-            echo "Eu Válido o Limite <br> ";
+        {   //esse parente abaixo pega a function validar MAE 
+            parent::validar();
+            echo " Eu Válido o Limite <br> ";
 
         }
 

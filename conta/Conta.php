@@ -42,7 +42,7 @@
         public function validar()
         {
 
-            echo "Eu válido a Agência, Conta, Titular e Saldo <br>";
+            echo 'Eu válido a Agência, Conta, Titular e Saldo <br>';
 
         }
 
