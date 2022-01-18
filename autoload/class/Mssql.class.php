@@ -1,6 +1,6 @@
 <?php
-
-    class SQL
+   
+    class SQL21
     {   
 
         function __construct()
