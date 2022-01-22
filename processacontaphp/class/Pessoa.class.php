@@ -51,7 +51,8 @@
     {
 
         echo "Objeto {$this->Nome} finalizando ... <br>\n";
-
+        echo "<br>";
+        echo "<hr>";
     }
 
 }

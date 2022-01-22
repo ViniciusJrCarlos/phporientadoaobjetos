@@ -57,7 +57,8 @@
         {
     
             echo "Objeto da conta {$this->Codigo} de {$this->Titular->Nome} finalizando ... <br>\n";
-    
+            echo "<br>";
+            echo "<hr>";
         }
     
 
