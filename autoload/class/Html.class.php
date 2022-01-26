@@ -1,6 +1,6 @@
 <?php
     
-    class Html21
+    class Html
     {   
 
         function __construct()

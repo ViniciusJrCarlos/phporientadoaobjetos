@@ -1,11 +1,13 @@
 <?php
 
-    function __autoload($class)
-    {
-        include_once("class/$class.class.php");
-    }
+    //function __autoload($class)
+    //{
+        //include_once("class/$class.class.php");
+   // }
+
+     include_once("class/phpautoload/autoload.php");   
 
     //include_once "class/Html.class.php";
-    $html = new Html;
+    $html = new Html21();
 
 ?>
