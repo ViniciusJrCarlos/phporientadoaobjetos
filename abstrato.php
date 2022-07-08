@@ -19,7 +19,7 @@
    echo "<hr>";
    echo "<br>";
 
-   $conta_carlos = new ContaPoupanca(6677, "CP.1234.56", "10/07/02", $carlos, 9877, 500.00, "10/07");
+   $conta_carlosss = new ContaPoupanca(6677, "CP.1234.56", "10/07/02", $carlos, 9877, 500.00, "10/07");
 
    echo "<br>\n";
    echo "Manipulação a conta de: {$conta_carlos->Titular->Nome}: <br>\n ";

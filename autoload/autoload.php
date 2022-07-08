@@ -2,7 +2,7 @@
 
     spl_autoload_register(
         function($class){
-            include_once("../class/$class.php");
+            include_once("class/{$class}.class.php");
         }
     );
 

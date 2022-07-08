@@ -1,11 +1,11 @@
 <?php
-   
-    class SQL21
+
+    class Pessoa
     {   
 
         function __construct()
         {
-            echo "Ola eu sou uma classe SQL <hr> ";
+            echo "Ola eu sou uma classe Pessoa <hr> ";
         }
 
     }

@@ -1,5 +1,5 @@
 <?php
-    Class Pessoa
+    class Pessoa
     {   
         public $Codigo;
         public $Nome;

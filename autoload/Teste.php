@@ -5,9 +5,11 @@
         //include_once("class/$class.class.php");
    // }
 
-     include_once("class/phpautoload/autoload.php");   
+     include_once("autoload.php");   
 
     //include_once "class/Html.class.php";
-    $html = new Html21();
+    $html = new Html();
+	$mysql = new Mysql();
+	$pessoa = new Pessoa();
 
 ?>
