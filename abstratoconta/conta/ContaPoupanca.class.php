@@ -5,7 +5,7 @@ class ContaPoupanca extends Conta
 
     public $aniversario;
 
-    //metodo sobrescritooooooooooooooo
+    //metodo sobrescritooooooooooooooooooo
 
     function __construct($Agencia, $Codigo, $DataDeCriacao, $Titular, $Senha, $Saldo, $Aniversario)
     {
